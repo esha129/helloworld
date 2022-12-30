@@ -1,0 +1,268 @@
+
+a = [1, 2, 3, 4, 5]
+print(a)
+
+list1 = [3,5,"Hi",6.0]
+list2 = list1
+print(list1[1:3])
+print(list2[1:3])
+print(list1[0:2])
+
+print ("------- this is where things get complicated -------")
+
+list1.append(2)
+print(list1)
+
+list1.insert(3,6.5)
+print(list1)
+
+x1=list1+list2
+print (x1)
+
+list3 = [2, 4, 6, 8]
+list4 = [1, 3, 5, 7]
+
+print(list3[2]*list4[2])
+
+list1.pop(1) #pop without any input removes the last values in the list
+print(list1)
+
+print ("-------- new things in class --------")
+
+list1 = [3, 5, 7, 9]
+list2 = list1.copy()
+
+print(list1)
+print(list2)
+
+x = [1, 2, 3, 5, 7, 6, 4, 8, 9]
+print(x[2:6])
+
+x.append(21)
+
+print(list2*3) #it will repeat the list 3 times, not multiply it, list is essentially treated as a different entity from int and str
+print(x*-2) #it will leave the list empty since it can't do anything
+
+print("-----------", "HI"*3, "next topic! -----------")
+
+names=['Kanchi','Mahima','Manas','Meghna','Vania','Freyana','Janvi','Aditya']
+for name in names:
+  print(name + ' is acing Python just about now')
+
+print('----------------break :)----------------')
+
+squares = [x**2 for x in range(1,11)]
+print (squares)
+odd_choice = [2*i-1 for i in range(1,100) if i%7==0]
+print(odd_choice)
+
+print(len(squares))
+
+
+import random #random is a name for a package which holds the code which allows the shuffle command to work together with it and shuffle the contents of a list
+deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11]*4
+random.shuffle(deck)
+print(deck)
+
+x = input('what are you feeling? hungry, bored or talkative? ')
+mylist = ['listen to taylor swift', 'eat some pizza', 'tomato and maggie is SUPREME']
+if x == 'hungry':
+  print(mylist[1])
+elif x == 'bored':
+  print(mylist[0])
+else:
+  print(mylist[2])
+
+
+nums = [3, 5, 6, 7, 8, 10, 12]
+
+for i in range(len(nums)):
+  n = nums[i]
+  if n%2 == 0:
+    print (n, 'is even')
+  else:
+    print (n, 'is odd')
+print ('----------new code :) ------------')
+for n in nums:
+  if n%2 == 0:
+    print (n, 'is even')
+  else:
+    print (n, 'is odd')
+print ('----------new code :) ------------')
+l = len(nums)
+for i in range(l):
+  n = nums[i]
+  if n%2 == 0:
+    print (n, 'is even')
+  else:
+    print (n, 'is odd')
+
+"""
+
+import random
+
+print(random.randint(1,6), '+', random.randint(1,6))
+
+"""
+
+list1 = [3,5,"Hi",6.0] # Hint: Never do this in real life 
+list2 = list1
+print(list1)
+#list 2 is what list 1 is right now - 3.5, hi, 6.0
+list2[0] = 7  
+print(list1)
+#replaced the first element with 7
+print(list1[1:3])
+# printed the second and third element only, it printed 1 and 2, not 3
+list1.append(2)
+print(list1)
+# added the elemnt 2 at the end of the list
+list1.insert(3,6.5)
+print(list1)
+#it inserted the element 6.5 at position 3, which is the fourth place in the list 
+x1=list1+list2
+print(x1)
+#cobines both lists
+list1.pop(1)
+print(list1)
+#popped off the element at the second place in the list (positon 1)
+
+print("------------------------")
+
+names=["Kanchi","Mahima","Manas","Meghna","Vania","Freyana","Janvi","Aditya"] 
+for name in names:
+  print(name + " is acing Python just about now")
+
+print("------------------------")
+
+squares = [x**2 for x in range(1,11)]
+#what happened in here?
+print(squares)
+odd_choice = [2*i-1 for i in range(1,100) if i%7==0]
+#what happened in here?
+print(odd_choice)
+
+#THIS IS A PART OF LIST COMPREHENSIONS, CHECK THEM OUT
+
+print("------------------------")
+
+first_names = ['Sneha', 'Aarushi', 'Anat', 'Priyashi', 'Akshar', 'Natalya', 'Dia']
+last_names = ['Gupta', 'Hazrati', 'Jain', 'Jalan', 'Janwadkar', 'Joe', 'Kumar']
+for i in range(len(first_names)):
+  for i in range(len(last_names)):
+    print(first_names[i] + " " + last_names[i])
+  break 
+
+print("------------------------")
+
+full_names = [first_names[i] + " " + last_names[i] for i in range(len(first_names))]
+print(full_names)
+#always put the thing that i need to append BEFORE the for conditon
+
+print("------------------------")
+
+s = 'Good morning Vietnam!' 
+print(s[0])
+print(s[5])
+print(s[0:5]) # The syntax is of the format s[start:end:step] 
+print(s[0:11]) #How many characters is this printing out? 
+print(s[:])
+print(s[-5:-2]) #weird!
+len(s)
+print(s[::-1]) #What is happening??????
+x = 'h'
+print(x)
+y = "u"
+print(y)
+
+print("------------------------")
+
+s1 = "My name is Abda Cadabra"
+print(s1.strip())
+print(s1.lower())
+print(s1.upper())
+print("Abd" in s1)
+list1 = s1.strip().split(" ") #Split the string at every space print(list1) // The result is a list of strings
+
+print("------------------------")
+
+pal = "deified"
+print(pal[::-1] == pal)
+
+nonpal = "defied reality"
+p = " " in nonpal
+if p == True:
+  print("the input contains spaces")
+else:
+  print("the input doesn't contain spaces")
+
+print("------------------------")
+
+# Anil Kumble Abdul Qadir Shane Warne
+firstName = ["Anil", "Abdul", "Shane"]
+lastName = ["Kumble", "Qadir", "Warne"]
+
+fullName = [firstName[i] + " " + lastName[i] for i in range(len(firstName))]
+
+print(fullName)
+
+firstName = [s.split()[0] for s in fullName]
+lastName = [s.split()[1] for s in fullName]
+print(firstName)
+print(lastName)
+
+sortedLast = sorted(lastName)
+print(sortedLast)
+
+for s in sortedLast:
+  print(fullName[lastName.index(s)])
+  
+
+print("------------------------")
+
+s = "my name is ayesha"
+
+s1 = s[2:7]
+print(s1)
+s2 = s[6:1:-1]
+print(s2)
+s3 = s[2:7:1]
+print(s3)
+s4 = s[1:6:-1]
+print(s4)
+#s4 and s5 will give blank spaces as the result instead of an error (that is just a choice made by the programming) - you cannot go ahead of 6 in s5 since 6 is the final value (which itself cannot be included) however in s4 you cannpt go backward since 1 is the beginning value and the only logical way to go is +1 but that isn't possible
+s5 = s[6:1]
+print(s5)
+s6 = s[7:]
+print(s6)
+s7 = s[7::-1]
+print(s7)
+s8 = s[7:-1]
+print(s8)
+#-x in the means it will consider the x-last letter as the ending value
+s9 = s[:-2]
+print(s9)
+#it will start from the initial and go to the end but not print the last two letters
+s10 = s[:-1:-1]
+print(s10)
+# [a:b:c] -> go from a to the value before b in increments of c
+
+print("------------------------")
+
+a = "ayesha"
+print(len(a))
+# gives 6
+a1 = "       ayesha    :)"
+print(a1)
+# gives ''       ayesha    :)''
+print(a.strip())
+# gives 'ayesha'
+
+print("------------------------")
+
+b = "vanshika sareen sucks <3"
+print(b)
+print(b.split("s"))
+# gives ['van', 'hika ', 'areen ', 'uck', ' <3']
+
+print("------------------------")
