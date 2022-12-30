@@ -1,0 +1,10 @@
+print ("Hello! Let's play a game of rock, paper, scissors!")
+a = (input("Please input your choice, Player 1! (all in small letters, please ^_^): "))
+b = (input("Please input your choice, Player 2! (all in small letters, please ^_^): "))
+if (a=="rock" and b=="paper") or (a=="paper" and b=="scissors") or (a=="scissors" and b=="rock"):
+  print ("Player 2 won!")
+elif (b=="rock" and a=="paper") or (b == "paper" and a == "scissors") or (b == "scissors" and a == "rock"):
+  print ("Player 1 won!")
+else:
+  print ("It's a tie!")
+  # rock paper scissors game
