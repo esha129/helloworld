@@ -1,0 +1,23 @@
+#a chance given to us by our professor to get some additonal marks since some kids did bad in the quiz (dry-running code can be quite tricky) - rules are written in the description
+
+def primes(n):
+  l = [2, 3]
+  m = 4
+  i = 2
+  num_multiples = 0
+  while len(l) < n:
+    if m%i==0:
+      num_multiples == 1
+      break
+    elif num_multiples == 0:
+      l.append(m)
+      i = i + 1
+      return i
+    m = m+1
+    return m
+  for x in l:
+    print (l)
+
+print(primes(9))
+
+
