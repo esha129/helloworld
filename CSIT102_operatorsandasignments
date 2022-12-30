@@ -1,0 +1,77 @@
+x=5
+# 'X' is the variable and '5' is the value.
+y=7
+z=int(input())
+#this allows you to input a value for the variable and then the rest of the code is carried out with 'z' considered as this value. This function needs you to input the value in the beginning itself.
+print(x,y,x+y,z,z+x+y)
+
+print ("Ayesha :)")
+
+lyric = "I've got a blank space baby, and I'll write your name."
+#The words in the double quotes is a 'string'.
+words = lyric.split()
+print (words)
+#So, in 'split' you need to put the brackets or else the command doesn't work - the 'split' command is a function (it is a collection of code that will do something to whatever you do) so that's why putting a bracket is necessary
+print (lyric)
+
+x=2
+y=x*2
+x=3
+print(x,y)
+#The value for any variable can be reassigned and at the point it is reassigned, only then will it change. That's why, for the code in line 18, 'x' is considered 2 but since I put 'x' as 3 later, it printed '3' and '4' for the print command.
+
+for x in range (1,100): 
+  print (x)
+  y=x*2
+  print (y)
+#this command will first print 'x' -- which is values 1 to 99 (NOT 100) -- and then it will print 'y' -- which is 'x' times 2. like, first the first 'x' value and then the first 'y' value and then the second 'x' value and second 'y' value and so on and so forth.
+
+x = 9 
+y = 4
+# '=' is a assignment operator cause it is assigning the value to the variable.
+
+z = x + y
+print (z)
+# the operator is the '+' sign which means addition
+
+"""
+print (ayesha :))
+"""
+#the trio of double quotations makes it such that the coding and operations put in the middle is not done. It becomes a multi-length stream.
+
+z = x - y
+print (z)
+
+z = x/y
+print (z)
+#normal calculator division. also called floating division
+
+z = x//y
+print (z)
+# '//' gives the integer while dividing (like, proper fractions)
+
+z = x%y
+print (z)
+#gives the remainder in integer division
+
+isequal = x==y
+print(isequal)
+#this is an evaluation of whether x and y are equal. if you write only 'x=y' then it is assigning the value of y to x. 
+#the 'isequal' part is just a random variable assignment.
+
+print (x!=y)
+#this reads 'x is not equal to y'
+
+print (x<y)
+
+print (x>=y)
+#python is case sensitive
+
+print (type(x))
+#'type' tell the type of data base the variable/data is. 
+print(type(x/y))
+print (type("hello"))
+print(type("4"))
+# 'int' = integer 'float'= decimal number 'str' = string
+
+# asignment of variables, operators and all codes like 'if' 'for' etc are funcitions
