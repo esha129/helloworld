@@ -1,0 +1,132 @@
+#functions definiton
+def factorial(n): #def - defining the function factorial by saying that the input the function takes is N
+  p = 1 #initialisziing the value of p to 1
+  for i in range(1, n+1):
+    p = p*i
+    print(p)
+  return p #???
+
+#functions - allow you to run the same code without it being repetitive
+
+#function calls - using the defined function for a particular value
+f1 = factorial(5)
+print(f1)
+
+f2 = factorial(10)
+print(f2
+
+def acing_python(name):
+  print(name, "is acing Python right now.")
+
+acing_python("Kopal")
+acing_python("Maana")
+acing_python("Diya")
+
+name = input("Enter a name: ")
+acing_python(name)
+
+def acing_python(*names):
+  for name in names:
+    print(name, "is acing Python right now.")
+
+acing_python("Kopal", "Maana", "Diya")
+
+import math
+def pythagoras (a,b):
+  c = math.sqrt(a**2+b**2)
+  return c
+
+a = int(input("Enter a:"))
+b = int(input("Enter b:"))
+
+x = pythagoras(a,b)
+print(x)
+
+#write a function that inputs a string and prints the first half of the string
+
+def halfsies(string):
+  print(string[0:len(string)//2])
+
+s = input("Enter a sentence: ")
+
+halfsies(s) 
+
+#Write a function that takes in an integer n nad returns True if n is a prime and returns false if n is not a prime
+
+def prime(n):
+  out = True
+  for i in range(2,n):
+    if n%i==0:
+      out = False
+      break
+  return out
+
+a1 = prime(6)
+print(a1)
+
+a2 = prime(10)
+print (a2)
+
+a3 = prime(23)
+print (a3)
+
+def sum2(a,b):
+  return a + b
+
+print(sum2(3,5))
+print(sum2(7,3))
+
+def sum3(a, b, c):
+  return a + b + c
+
+print(sum3(4, 5, 6))
+
+def sum_any(*inputs):
+  s = 0
+  for i in inputs:
+    s = s+i
+  return s
+
+print(sum_any(2, 3, 5, 7, 9))
+print(sum_any(23, 2))
+
+def sum_any(*inputs):
+  s = 0
+  for i in range(len(inputs)):
+    s = s+inputs[i]
+  return s
+
+print(sum_any(4, 6, 8, 10))
+print(sum_any(29, 3))
+
+
+#Write a function that takes a variable number of integers as an input and returns the maximum of them as output
+def max_number(*a): 
+  m = a[0] #defining m as the first value in the list of inputs
+  for i in range(1, len(a)): #for the whole length of the input list from first value to last
+    if a[i]>m: #if the i(th) value of a is bigger than the first first value of m
+      m = a[i] #the changing value of m
+    print(m)
+  return m
+
+print(max_number(2, 5, 7, 19, 3))
+
+#dictionary = always contains pairs - a key and a value for the key
+
+phone_book = {"Kaushik": 1234, "V": 4566, "Parth":1930, "Snehan": 9088}
+phone_book["Vihaan"] = 7234
+del(phone_book["Kaushik"])
+
+print(phone_book)
+
+
+
+She = {"clothes":"wears short skirts", "position": "is cheer captain", "shoes": "wears high heels"}
+I = {"clothes":"wear t-shirts", "position": "am on the bleachers", "shoes": "wears sneakers"}
+
+for n in She.keys():
+  print("She", She[n])
+  print ("I", I[n])
+  if n != "clothes":
+    print("Oh can't you seeeeeeeeee...")
+    print("You belong with me.")
