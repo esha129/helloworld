@@ -1,0 +1,85 @@
+
+Y = 56
+X = Y+5
+# variable - an entity in programming which contains data assigned to it - you can’t start variables with numbers and no spciecial characters except underscores
+#9//5=1 (// gives quotient)
+# 9%5 = 4 (% gives remainder)
+print(X%5 == 0)
+#(to check if x is a multiple of 5)
+print(X%5==0)
+X = 10
+print((X%5==0)*10)
+print(X//5 * 2.5) 
+#if you add/multiple/subtract/divide an integer with a float, then the number becomes a float (the answer for this would be 5.0 and not simply 5)
+print(type(X//5 * "3"))
+print((X//5 * "3"))
+#if you multiple a number with a string, then the string will get repeated that many times
+print (X/5 * "34") #the type is a float and you can't multiply a float with a string, so this would show error
+#any number divided simply with '/' then the value will come as a float
+X = 17
+print(str(X/5) + "34")
+#"".join(x.split()) - to join all the words in a string
+#x[::-1] - to write any string backward
+
+x = int(input("Please input x here: "))
+y = int(input("Please input y here: "))
+
+if x%y==0:
+  print ("Yes")
+else:
+  print ("No")
+
+y = 56
+if y%8==0:
+  print(":)")
+elif y%2==0:
+  print("^_^")
+elif y%3==0:
+  print (":(")
+else:
+  print("wowie")
+#it will only print :) because in an if code if the conditon is fulfilled, then the programme stops checkign it against other conditions
+
+n = int(input("Please input a number here : "))
+for i in range(1,n+1):
+  print('*'*i)
+
+for i in range (1, 26):
+#this command essentially makes i every single number in the range of 1 - 25 and allows the programme to make a loop which repeatedly does the code for every number
+  print (i, i**3)
+
+
+for a in range (1,26):
+  b = a**3
+  print(a,b)
+  if b>80:
+    break
+#it breaks only AFTER you have reached the value - even if you change the codniton to b>64 it would still print 5 because 65 is > than 64, so technically only at the 5th value is b actually > 64
+
+print ("------")
+
+for a in range (1, 26):
+  b = a**3
+  if b>64:
+    break
+  print(a,b)
+  # goes till 4, 64 because the loop still consists of that pair, even if it breaks
+
+print ("------")
+
+for a in range (1,10):
+  b = a**3
+  print (a,b)
+  if b>64:
+    break
+  print (a,b)
+  #the loop breaks at 64 and so prints it, then it goes back to repeat a 5th time, so in the first print command it'll print 5th paur but second print it won't because it realises the second part of the code is no longer working, thus stopping the code immediately
+
+print ("------")
+
+for i in range (1,5):
+  print ("Hi #",i)
+  print("Hello #", i)
+  print("More!")
+
+print ("------")
