@@ -1,0 +1,75 @@
+
+x = input ("enter a number: ")
+y = input ("enter another number: ")
+#after the function 'input' if you put words in brackets abd double qutation it prints is automatically - it is a part of the function 'input' because it guides the user of the code to know exactly what needs to be inputted
+
+print (type(x))
+#this tells us the type of data 'x' is right now - which is a string because it is a function right now
+
+x = int(x)
+y = int(y)
+#type casting - casting one tupe of data to another type- we converted 'x' from a string to a integer
+
+print(type(x))
+z = x + y 
+print ("the sum of the two numbers is ", z)
+#you can print consecutive things (like here, the string and the data value of 'z') so that it is a sing;e sentence!
+
+x=(input("enter a number :) "))
+y=(input("another number please: "))
+print(x+y)
+#doing the addition command without making the x and y values integers makes the programme simply put 'x' and 'y' next to each other
+
+x = int(input("enter a number: "))
+y = int(input("enter another number na: "))
+print(x+y)
+#doing the addition command with making the x and y values integers makes the programme simply add 'x' and 'y' next to each other
+
+print ("break - x -")
+
+x = input ("enter a number x: ")
+y = (input ("enter the number y: "))
+x= (int(x))
+y = int(y)
+if x>y:
+  print ("x is greater")
+  #'if... else' is a codnitonal function. it checks for the codniton set ahead.
+elif y>x:
+  print ("y is greater")
+  # is previous conditon isn't true, then...
+else:
+  print ("x and y are equal")
+  #and if either conditon isn't true, then...
+
+
+print ("post class exercises")
+
+x = int(input("enter a number please: "))
+
+if x%2 == 0:
+  print ("the number is even")
+else: 
+  print("the number is odd")
+
+x=int(input ("enter a number"))
+a = (22/7)*(x**2)
+
+print("area of the circle", a)
+
+
+x = int(input("enter a number"))
+y = int(input("enter another number"))
+
+print("absolute difference of the two number is", abs(x-y))
+
+
+
+x = int(input("enter a number "))
+y = int(input("enter a number "))
+
+if (x-y)>0:
+  print ("the absolute difference is", (x-y))
+elif (x-y)<0: 
+    print ("the absolute difference is", (x-y)*-1)
+else:
+  print ("the absolute difference is zero!")
